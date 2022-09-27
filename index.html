@@ -15,21 +15,36 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/general.css" />
 
+    <!-- ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
     <title>Omnifood</title>
   </head>
   <body>
     <header class="header">
-      <img src="img/omnifood-logo.png" class="logo" alt="Omnifood logo" />
+      <a href="#">
+        <img src="img/omnifood-logo.png" class="logo" alt="Omnifood logo" />
+      </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">Section One</a></li>
-          <li><a class="main-nav-link" href="#">Section Two</a></li>
-          <li><a class="main-nav-link" href="#">Section Three</a></li>
-          <li><a class="main-nav-link" href="#">Section Four</a></li>
-          <li><a class="main-nav-link nav-cta" href="#">Section Five</a></li>
+          <li><a class="main-nav-link" href="#">Як це працює</a></li>
+          <li><a class="main-nav-link" href="#">Страви</a></li>
+          <li><a class="main-nav-link" href="#">Відгуки</a></li>
+          <li><a class="main-nav-link" href="#">Ціни</a></li>
+          <li>
+            <a class="main-nav-link nav-cta" href="#">Почати</a>
+          </li>
         </ul>
       </nav>
     </header>
+
     <main>
       <section class="section-hero">
         <div class="hero">
@@ -87,6 +102,7 @@
           </div>
         </div>
       </section>
+
       <section class="section-how">
         <div class="container">
           <span class="subheading">Як це працює</span>
@@ -156,6 +172,492 @@
           </div>
         </div>
       </section>
+
+      <section class="section-meals">
+        <div class="container center-text">
+          <span class="subheading">Страви</span>
+          <h2 class="heading-secondary">
+            Omnifood AI вибирає з понад 5,000+ рецептів
+          </h2>
+        </div>
+
+        <div class="container grid grid--3cols margine-bottom-md">
+          <div class="meal">
+            <img
+              src="img/meals/meal-1.jpg"
+              class="meal-img"
+              alt="Japanese Gyozas"
+            />
+            <div class="meal-content">
+              <div class="meal-tags">
+                <span class="tag tag--vegetarian">Vegetarian</span>
+              </div>
+              <p class="meal-title">Японські ґьози</p>
+              <ul class="meals-attributes">
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                  <span><strong>650</strong> калорій</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon
+                    class="meal-icon"
+                    name="restaurant-outline"
+                  ></ion-icon
+                  ><span>NutriScore&reg; <strong>74</strong> </span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="star-outline"></ion-icon
+                  ><span><strong>4.9</strong> рейтинг (537)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="meal">
+            <img
+              src="img/meals/meal-2.jpg"
+              class="meal-img"
+              alt="Avocado Salad"
+            />
+
+            <div class="meal-content">
+              <div class="meal-tags">
+                <span class="tag tag--vegan">Vegan</span>
+                <span class="tag tag--paleo">Paleo</span>
+              </div>
+              <p class="meal-title">Салат з авокадо</p>
+              <ul class="meals-attributes">
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                  <span><strong>400</strong> калорій</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon
+                    class="meal-icon"
+                    name="restaurant-outline"
+                  ></ion-icon
+                  ><span>NutriScore&reg; <strong>92</strong> </span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="star-outline"></ion-icon
+                  ><span><strong>4.8</strong> рейтинг (441)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="diets">
+            <h3 class="heading-tertiary">Працюємо з любою дієтою</h3>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Vegetarian</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Vegan</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Pescatarian</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Gluten-free</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Lactose-free</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Keto</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Paleo</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Low FODMAP</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Kid-friendly</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container all-recipes">
+          <a href="#" class="link">See all recipes &rarr;</a>
+        </div>
+      </section>
+
+      <section class="section-testimonials">
+        <div class="testimonials-container">
+          <span class="subheading">Відгуки</span>
+          <h2 class="heading-secondary">
+            Як тільки спробуєш, не зможеш зупинитись
+          </h2>
+
+          <div class="testimonials">
+            <figure class="testimonial">
+              <img
+                src="img/customers/dave.jpg"
+                class="testimonial-img"
+                alt="Photo of customer"
+              />
+              <blockquote class="testimonial-text">
+                Недорогі, корисні та смачні страви навіть без необхідності
+                замовлення вручну! Це справді чарівне відчуття.
+              </blockquote>
+              <p class="testimonial-name">&mdash; Dave Bryson</p>
+            </figure>
+            <figure class="testimonial">
+              <img
+                src="img/customers/ben.jpg"
+                class="testimonial-img"
+                alt="Photo of customer"
+              />
+              <blockquote class="testimonial-text">
+                Алгоритм штучного інтелекту чарвіний, він щоразу вибирає для
+                мене правильні страви. Це неймовірно більше не турбуватися про
+                їжу!
+              </blockquote>
+              <p class="testimonial-name">&mdash; Ben Hadley</p>
+            </figure>
+            <figure class="testimonial">
+              <img
+                src="img/customers/steve.jpg"
+                class="testimonial-img"
+                alt="Photo of customer"
+              />
+              <blockquote class="testimonial-text">
+                Omnifood просто рятує! Я щойно відкрив компанію, тому часу на
+                куховарство немає. Від тепер я не можу жити без щоденної їжі!
+              </blockquote>
+              <p class="testimonial-name">&mdash; Steve Miller</p>
+            </figure>
+            <figure class="testimonial">
+              <img
+                src="img/customers/hannah.jpg"
+                class="testimonial-img"
+                alt="Photo of customer"
+              />
+              <blockquote class="testimonial-text">
+                Я вибрала Omnifood для всієї родини, і це звільняє стільки часу!
+                Крім того, все органічне, веганське та без пластику.
+              </blockquote>
+              <p class="testimonial-name">&mdash; Hannah Smith</p>
+            </figure>
+          </div>
+        </div>
+        <div class="gallery">
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-1.jpg" alt="Photo of food" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-2.jpg" alt="Photo of food" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-3.jpg" alt="Photo of food" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-4.jpg" alt="Photo of food" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-5.jpg" alt="Photo of food" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-6.jpg" alt="Photo of food" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-7.jpg" alt="Photo of food" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-8.jpg" alt="Photo of food" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-9.jpg" alt="Photo of food" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-10.jpg" alt="Photo of food" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-11.jpg" alt="Photo of food" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-12.jpg" alt="Photo of food" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="section-pricing">
+        <div class="container">
+          <span class="subheading">Ціни</span>
+          <h2 class="heading-secondary">
+            Правильне харчування за вартістю звичайного
+          </h2>
+          <div class="container grid grid--2cols margine-bottom-md">
+            <div class="pricing-plan pricing-plan--starter">
+              <header class="plan-header">
+                <p class="plan-name">Стартовий</p>
+                <p class="plan-price"><span>$</span>399</p>
+                <p class="plan-text">в місяць. Це лише 13$ за страву!</p>
+              </header>
+
+              <ul class="list">
+                <li class="list-item">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon
+                  ><span>1 страва в день</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon
+                  ><span>Закази з 11 до 21</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon
+                  ><span>Доставка безкоштовна</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon class="list-icon" name="close-outline"></ion-icon
+                  ><span></span>
+                </li>
+              </ul>
+              <div class="plan-anchor">
+                <a href="#" class="btn btn--full"> Почати їсти правильно </a>
+              </div>
+            </div>
+
+            <div class="pricing-plan pricing-plan--complete">
+              <header class="plan-header">
+                <p class="plan-name">Повний</p>
+                <p class="plan-price"><span>$</span>649</p>
+                <p class="plan-text">в місяць. Це лише 11$ за страву!</p>
+              </header>
+
+              <ul class="list">
+                <li class="list-item">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon
+                  ><span> <strong>2</strong> страви в день</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon
+                  ><span>Закази приймаються <strong>24/7</strong></span>
+                </li>
+                <li class="list-item">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon
+                  ><span>Доставка безкоштовна</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon
+                  ><span>Доступ до новіших рецептів</span>
+                </li>
+              </ul>
+              <div class="plan-anchor">
+                <a href="#" class="btn btn--full"> Почати їсти правильно </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="container grid">
+            <aside class="plan-details">
+              Ціни включають усі відповідні податки. Ви можете скасувати в
+              будь-який час.
+            </aside>
+          </div>
+
+          <div class="container grid grid--4cols">
+            <div class="feature">
+              <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
+              <p class="feature-title">Ніякої готовки!</p>
+              <p class="feature-text">
+                Наші підписки охоплюють 365 днів на рік, навіть включаючи великі
+                свята.
+              </p>
+            </div>
+            <div class="feature">
+              <ion-icon
+                name="nutrition-outline"
+                class="feature-icon"
+              ></ion-icon>
+              <p class="feature-title">Тільки органічні</p>
+              <p class="feature-text">
+                Ми використовуєм лише місцеві, свіжі та органічні продукти для
+                приготування ваших страв.
+              </p>
+            </div>
+            <div class="feature">
+              <ion-icon name="leaf-outline" class="feature-icon"></ion-icon>
+              <p class="feature-title">Без відходів</p>
+              <p class="feature-text">
+                Наші партнери використовують лише багаторазові контейнери для
+                упаковки ваших страв.
+              </p>
+            </div>
+            <div class="feature">
+              <ion-icon name="pause-outline" class="feature-icon"></ion-icon>
+              <p class="feature-title">Пауза будь-коли</p>
+              <p class="feature-text">
+                Їдете у відпустку? Просто призупиніть свою підписку, і ми
+                повернемо гроші за невикористані дні.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">Візьміть перший обід за 0₴!</h2>
+              <p class="cta-text">
+                Почніть харчуватися правильно сьогодні. Ви можете будь-коли
+                скасувати або призупинити. І перший обід за наш рахунок!
+              </p>
+
+              <form class="cta-form" action="#">
+                <div class="">
+                  <label for="Full-name">Повне ім'я</label>
+                  <input
+                    id="Full-name"
+                    type="text"
+                    placeholder="Тарас Шевченко"
+                    required
+                  />
+                </div>
+
+                <div class="">
+                  <label for="email">Електронна адреса</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="me@example.com"
+                    required
+                  />
+                </div>
+
+                <div class="">
+                  <label for="select-where">Де ви про нас дізналися?</label>
+                  <select id="select-where">
+                    <option value="empty">Виберіть один варіант:</option>
+                    <option value="Friends">Друзі та Сім'я</option>
+                    <option value="Youtube">Youtube Відео</option>
+                    <option value="podcast">Подкаст</option>
+                    <option value="Facebook">Реклама Facebook</option>
+                  </select>
+                </div>
+
+                <button class="btn btn--cta">Зареєструватись</button>
+              </form>
+            </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="Woman enjoying food"
+            ></div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="container grid footer--grid">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img src="img/omnifood-logo.png" class="logo" alt="Omnifood logo" />
+          </a>
+
+          <ul class="social-links">
+            <li>
+              <a href="#" class="footer-link"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="footer-link"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="footer-link"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; 2027 by Omnifood, Inc. All rights reserved.
+          </p>
+        </div>
+        <div class="adress-col">
+          <p class="footer-heading">Зв'яжіться з нами</p>
+          <adress class="contacts">
+            <p class="adress">7А Генерала Родимцева вул., 8 етаж, Київ</p>
+            <p>
+              <a class="footer-link" href="tel:+380636414237"
+                >+380 63 641 42 37</a
+              >
+            </p>
+            <p>
+              <a class="footer-link" href="mailto:hello@omnifood.com"
+                >hello@vetal.aye</a
+              >
+            </p>
+          </adress>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Акаунт</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Створити акаунт</a></li>
+            <li><a class="footer-link" href="#">Увійти</a></li>
+            <li><a class="footer-link" href="#">iOS застосунок</a></li>
+            <li><a class="footer-link" href="#">Android застосунок</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Компанія</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Про Omnifood</a></li>
+            <li><a class="footer-link" href="#">Для бізнесу</a></li>
+            <li><a class="footer-link" href="#">Партнери</a></li>
+            <li><a class="footer-link" href="#">Кар'єра</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Ресурси</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Збірник рецептів</a></li>
+            <li><a class="footer-link" href="#">Центр підтримки</a></li>
+            <li>
+              <a class="footer-link" href="#">Privacy & terms</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
