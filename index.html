@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Omnifood це підписка на їжу з використанням штучного інтелекту, що допоможе вам їсти правильно 365 днів на рік. Пристосовується до ваших особистих смаків та дієтичних потреб. "
+    />
 
+    <!-- Шріфти -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,10 +17,13 @@
       rel="stylesheet"
     />
 
+    <!-- Доки -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <script defer src="js/script.js"></script>
 
-    <!-- ICONS -->
+    <!-- Для іконок -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -25,8 +33,21 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
 
-    <title>Omnifood</title>
+    <!-- Библиотека для плавного скролла в сафари -->
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <!-- Общее -->
+    <title>Omnifood &mdash; Ніякої готовки!</title>
+    <link rel="icon" href="img/favicon 512.png" />
+
+    <!-- Иконки для сохранения сайтов в избранное на андроидах и  айфонах -->
+    <link rel="apple-touch-icon" href="img/favicon-apple-180.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
   </head>
+
   <body>
     <header class="header">
       <a href="#">
@@ -34,15 +55,19 @@
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">Як це працює</a></li>
-          <li><a class="main-nav-link" href="#">Страви</a></li>
-          <li><a class="main-nav-link" href="#">Відгуки</a></li>
-          <li><a class="main-nav-link" href="#">Ціни</a></li>
+          <li><a class="main-nav-link" href="#how">Як це працює</a></li>
+          <li><a class="main-nav-link" href="#meals">Страви</a></li>
+          <li><a class="main-nav-link" href="#testimonials">Відгуки</a></li>
+          <li><a class="main-nav-link" href="#pricing">Ціни</a></li>
           <li>
-            <a class="main-nav-link nav-cta" href="#">Почати</a>
+            <a class="main-nav-link nav-cta" href="#cta">Почати</a>
           </li>
         </ul>
       </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
 
     <main>
@@ -57,10 +82,10 @@
               знову харчуватися правильно. Пристосовується до ваших особистих
               смаків та дієтичних потреб.
             </p>
-            <a href="#" class="btn btn--full margin-right-small">
-              Почати їсти правильно
+            <a href="#cta" class="btn btn--full margin-right-small">
+              Почати їсти добре
             </a>
-            <a href="#" class="btn btn--outline">Дізнатись більше &darr;</a>
+            <a href="#how" class="btn btn--outline">Детальніше &darr;</a>
             <div class="delivered-meals">
               <div class="delivered-img">
                 <img src="img/customers/customer-1.jpg" alt="Customer photo" />
@@ -76,11 +101,16 @@
             </div>
           </div>
           <div class="hero-image-box">
-            <img
-              src="img/hero.png"
-              class="hero-img"
-              alt="Woman enjoying food, meals and food bowls"
-            />
+            <picture>
+              <!-- Это поможет браузерам, что не поддерживают webP рендерить более толстый css, а новым - использовать легкий webp -->
+              <source srcset="img/hero.webp" type="image/webp" />
+              <source srcset="img/hero.png" type="image/png" />
+              <img
+                src="img/hero-min.png"
+                class="hero-img"
+                alt="Woman enjoying food, meals and food bowls"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -103,7 +133,7 @@
         </div>
       </section>
 
-      <section class="section-how">
+      <section class="section-how" id="how">
         <div class="container">
           <span class="subheading">Як це працює</span>
           <h2 class="heading-secondary">
@@ -173,7 +203,7 @@
         </div>
       </section>
 
-      <section class="section-meals">
+      <section class="section-meals" id="meals">
         <div class="container center-text">
           <span class="subheading">Страви</span>
           <h2 class="heading-secondary">
@@ -247,52 +277,81 @@
 
           <div class="diets">
             <h3 class="heading-tertiary">Працюємо з любою дієтою</h3>
-            <ul class="list">
-              <li class="list-item">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>Vegetarian</span>
-              </li>
-              <li class="list-item">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>Vegan</span>
-              </li>
-              <li class="list-item">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>Pescatarian</span>
-              </li>
-              <li class="list-item">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>Gluten-free</span>
-              </li>
-              <li class="list-item">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>Lactose-free</span>
-              </li>
-              <li class="list-item">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>Keto</span>
-              </li>
-              <li class="list-item">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>Paleo</span>
-              </li>
-              <li class="list-item">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>Low FODMAP</span>
-              </li>
-              <li class="list-item">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>Kid-friendly</span>
-              </li>
-            </ul>
+            <div class="diets-list">
+              <ul class="list">
+                <li class="list-item">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon
+                  ><span>Vegetarian</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon
+                  ><span>Vegan</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon
+                  ><span>Pescatarian</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon
+                  ><span>Gluten-free</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon
+                  ><span>Lactose-free</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon
+                  ><span>Keto</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon
+                  ><span>Paleo</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon
+                  ><span>Low FODMAP</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon
+                  ><span>Kid-friendly</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="container all-recipes">
-          <a href="#" class="link">See all recipes &rarr;</a>
+          <a href="#" class="link">Побачити всі рецепти &rarr;</a>
         </div>
       </section>
 
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="testimonials">
         <div class="testimonials-container">
           <span class="subheading">Відгуки</span>
           <h2 class="heading-secondary">
@@ -391,7 +450,7 @@
         </div>
       </section>
 
-      <section class="section-pricing">
+      <section class="section-pricing" id="pricing">
         <div class="container">
           <span class="subheading">Ціни</span>
           <h2 class="heading-secondary">
@@ -433,7 +492,7 @@
                 </li>
               </ul>
               <div class="plan-anchor">
-                <a href="#" class="btn btn--full"> Почати їсти правильно </a>
+                <a href="#" class="btn btn--full"> Почати їсти добре </a>
               </div>
             </div>
 
@@ -457,7 +516,7 @@
                     class="list-icon"
                     name="checkmark-outline"
                   ></ion-icon
-                  ><span>Закази приймаються <strong>24/7</strong></span>
+                  ><span>Заказуйте <strong>24/7</strong></span>
                 </li>
                 <li class="list-item">
                   <ion-icon
@@ -475,7 +534,7 @@
                 </li>
               </ul>
               <div class="plan-anchor">
-                <a href="#" class="btn btn--full"> Почати їсти правильно </a>
+                <a href="#" class="btn btn--full"> Почати їсти добре </a>
               </div>
             </div>
           </div>
@@ -509,7 +568,7 @@
             </div>
             <div class="feature">
               <ion-icon name="leaf-outline" class="feature-icon"></ion-icon>
-              <p class="feature-title">Без відходів</p>
+              <p class="feature-title">Ніяких відходів</p>
               <p class="feature-text">
                 Наші партнери використовують лише багаторазові контейнери для
                 упаковки ваших страв.
@@ -527,7 +586,7 @@
         </div>
       </section>
 
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
@@ -537,12 +596,13 @@
                 скасувати або призупинити. І перший обід за наш рахунок!
               </p>
 
-              <form class="cta-form" action="#">
+              <form class="cta-form" name="sign-up" netlify>
                 <div class="">
                   <label for="Full-name">Повне ім'я</label>
                   <input
                     id="Full-name"
                     type="text"
+                    name="full-name"
                     placeholder="Тарас Шевченко"
                     required
                   />
@@ -553,6 +613,7 @@
                   <input
                     id="email"
                     type="email"
+                    name="email"
                     placeholder="me@example.com"
                     required
                   />
@@ -560,7 +621,7 @@
 
                 <div class="">
                   <label for="select-where">Де ви про нас дізналися?</label>
-                  <select id="select-where">
+                  <select id="select-where" name="select-where">
                     <option value="empty">Виберіть один варіант:</option>
                     <option value="Friends">Друзі та Сім'я</option>
                     <option value="Youtube">Youtube Відео</option>
@@ -581,6 +642,7 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <div class="container grid footer--grid">
         <div class="logo-col">
@@ -607,7 +669,8 @@
           </ul>
 
           <p class="copyright">
-            Copyright &copy; 2027 by Omnifood, Inc. All rights reserved.
+            Copyright &copy; <span class="year"></span> by Danil Makarov, Inc.
+            All rights reserved.
           </p>
         </div>
         <div class="adress-col">

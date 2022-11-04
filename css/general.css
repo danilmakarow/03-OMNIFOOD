@@ -58,6 +58,30 @@ Medium: 11px
 */ /* *******************************************  */
 /* GENERAL REUSABLE COMPONENTS  */
 /* *******************************************  */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size 10px */
+  font-size: 62.5%;
+  overflow-x: hidden;
+  /* scroll-behavior: smooth; -Не работает в нафари и едже */
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+
+  /* Работает только если ничего абсолютно позиционировано к body */
+  overflow-x: hidden;
+}
+
 .btn:link,
 .btn:visited,
 .btn {
@@ -190,9 +214,11 @@ Medium: 11px
   grid-template-columns: repeat(4, 1fr);
 }
 
+/* 
 .grid--5cols {
   grid-template-columns: repeat(5, 1fr);
-}
+} 
+*/
 
 .list {
   list-style: none;
